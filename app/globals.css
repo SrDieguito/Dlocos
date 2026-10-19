@@ -1,0 +1,10 @@
+:root { --canvas: 228 230 231; --surface: 241 242 242; --soft: 214 217 219; --line: 207 210 212; --ink: 42 45 48; --mute: 107 112 117; --brand: 0 152 61; --accent: 0 152 61; --gold: 224 184 0; color-scheme: light; }
+.dark { --canvas: 38 38 36; --surface: 48 48 46; --soft: 58 58 55; --line: 78 78 73; --ink: 236 233 225; --mute: 160 157 148; --brand: 0 140 58; --accent: 78 200 128; --gold: 224 184 0; color-scheme: dark; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { background: rgb(var(--canvas)); color: rgb(var(--ink)); font-variant-numeric: tabular-nums; -webkit-tap-highlight-color: transparent; }
+input, textarea { background: rgb(var(--surface)); color: rgb(var(--ink)); }
+input::placeholder, textarea::placeholder { color: rgb(var(--mute)); }
+@keyframes scan { 0%,100% { top: 8% } 50% { top: 88% } }
+@media (prefers-reduced-motion: reduce) { .scanline { animation: none !important } }

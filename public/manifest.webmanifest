@@ -1,0 +1,3 @@
+{ "name": "Catálogo D'Locos HV", "short_name": "D'Locos HV", "start_url": "/", "display": "standalone",
+  "background_color": "#e4e6e7", "theme_color": "#e4e6e7",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }] }
